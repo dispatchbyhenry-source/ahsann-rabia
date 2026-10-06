@@ -1,0 +1,1 @@
+<script>const rates={EUR:1,USD:{{ currencies['USD'][0] }},PKR:{{ currencies['PKR'][0] }}},currency='{{ currency }}';document.querySelectorAll('.price').forEach(e=>{const n=Number(e.dataset.pkr)*rates[currency];e.textContent=new Intl.NumberFormat(undefined,{style:'currency',currency}).format(n)});</script>
